@@ -194,6 +194,9 @@ body {
     font-size: 16px;
     overflow-x: hidden;
 }
+em,i {
+	font-style: italic 
+}
 b,
 strong {
 	font-weight: 700;
@@ -323,12 +326,15 @@ ul.slimmenu li.active ul li a{
 .main-menu ul li ul {
 	width: 230px;
 }
+.main-menu ul li ul.contact {
+	width: 120px;
+}
 .main-menu ul li ul li {
 	display: block;
 }
 .main-menu ul li ul li a {
 	line-height: 24px;
-	background: #3db76d;
+	background: #1d8ec2;
 }
 .main-menu ul li ul li.active a,
 .main-menu ul li ul li a:hover {
@@ -363,16 +369,16 @@ ul.slimmenu li.active ul li a{
 
 
 .slimmenu li:hover a{
-	color: #3db76d;
+	color: #21b8fd;
 }
 ul.slimmenu li .sub-toggle > i{
-	color: #3db76d;
+	color: #21b8fd;
 }
 ul.slimmenu li.active .sub-toggle > i{
 	color: #ffffff;
 }
 ul.slimmenu li.has-submenu:hover i{
-	color: #3db76d !important;
+	color: #21b8fd !important;
 }
 
 .main-menu ul li.has-submenu ul li a{
@@ -398,7 +404,7 @@ ul.slimmenu li.has-submenu:hover i{
 		left: 0;
 		right: 0;
 		z-index: 500;
-		background: #1d8ec2;
+		background: #21b8fd;
 	}
 	.main-menu .slimmenu li a {
 		border-bottom: 1px solid #eeeeee;
@@ -903,6 +909,30 @@ h1.small-title {
 	font-weight: 300;
 	color: #ffffff;
 }
+.team-btn {
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 50px;
+}
+.team-btn li {
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px 20px;
+	width: 33%;
+}
+.team-btn li a {
+	border: 2px solid #ffffff;
+	padding: 10px 20px;
+	display: block;
+	color: #ffffff;
+	width: 100%;
+	text-transform: uppercase;
+}
+.team-btn li a:hover {
+	background: #21b8fd;
+	border-color: #21b8fd;
+}
 
 
 .application-services {
@@ -1125,6 +1155,24 @@ h1.small-title {
 	color: #3db76d;
 	display: block;	
 }
+.post-detail h4 {
+	padding-bottom: 0;
+}
+
+.post-detail ul {
+	padding-top: 5px;
+}
+.post-detail ul li {
+	font-weight: 300;
+	color: rgb(51, 51, 51);
+	font-size: 16px;
+	line-height: 26px;
+	padding-bottom: 2px;
+}
+.post-detail a {
+	color: #3db76d;
+}
+.post-detail a:hover,
 .post-contain h3 a:hover {
 	color: #333333;
 }
@@ -1180,6 +1228,13 @@ h1.small-title {
 	.news-banner p {
 		font-size: 18px;
 		line-height: 28px;
+	}
+	.team-btn {
+		top: 20px;
+	}
+	.team-btn li {
+		padding: 10px;
+		width: 32%;
 	}
 }
 @media(max-width: 767px){
@@ -1253,6 +1308,10 @@ h1.small-title {
 		font-size: 16px;
 		line-height: 24px;
 		margin: 0;
+	}
+	.team-btn li {
+		padding: 10px 0;
+		width: 100%;
 	}
 }
 
